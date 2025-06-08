@@ -32,9 +32,7 @@ mul_6_svc(values *argp, struct svc_req *rqstp)
 {
 	static float  result;
 
-	/*
-	 * insert server code here
-	 */
+	result = argp->num1 * argp->num2;
 
 	return &result;
 }
